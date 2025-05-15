@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# 📍 Profile Mapper App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive React web application that displays user profiles along with their mapped addresses using Mapbox. This project includes an admin dashboard, responsive UI with Tailwind CSS, search/filter functionality, and profile detail views.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- 👤 View list of user profiles with name, photo, and description
+- 🗺️ Click “Summary” to view the user's address on an interactive Mapbox map
+- 🔍 Search and filter profiles by name and location
+- ➕ Admin dashboard to add and delete profiles
+- 📱 Fully responsive design using Tailwind CSS
+- ⚙️ Error handling for invalid data or map failures
+- ⏳ Loading indicators during map and data fetch
+- 📄 Profile detail page with extended information
 
-### `npm start`
+## 🛠️ Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [React.js](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vite](https://vitejs.dev/)
+- [React Icons](https://react-icons.github.io/react-icons)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Installation
 
-### `npm test`
+1. **Clone the repository:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/yourusername/profile-mapper-app.git
+   cd profile-mapper-app
 
-### `npm run build`
+2. **Install dependencies:**
+  ```bash
+  npm install
+  ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Add your Mapbox token:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create a .env file at the root:
+  ```bash
+  VITE_MAPBOX_TOKEN=your_mapbox_access_token
+  ```
+Get your token from https://account.mapbox.com/access-tokens/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Run the application:**
+  ```bash
+  npm run dev
+  ```
 
-### `npm run eject`
+5. **Build for production:**
+  ```bash
+  npm run build
+  ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🧪 Folder Structure
+  ```bash
+  profile-mapper-app/
+  │
+  ├── public/
+  ├── src/
+  │   ├── components/         # Reusable components (Map, Header, etc.)
+  │   ├── pages/              # Main pages (Home, Dashboard, Profile Detail)
+  │   ├── data/               # Static/mock profile data
+  │   ├── App.jsx             # Main app with routes
+  │   ├── main.jsx            # Entry point
+  │   └── index.css           # Tailwind imports
+  │
+  ├── .env                   # API tokens
+  ├── tailwind.config.js     # Tailwind config
+  ├── postcss.config.js      # PostCSS setup
+  ├── package.json
+  └── README.md
+  ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📝 Notes
+- Admin functions are basic (add/delete) and managed locally (no backend).
+- Map only works if valid coordinates are provided and Mapbox token is valid.
+- Future improvements can include: backend integration, role-based login, and edit functionality.
