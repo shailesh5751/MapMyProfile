@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Aditya Patel",
+      "photo": "/assets/aditya.jpg",
+      "description": "Software Engineer from Pune",
+      "address": "FC Road, Pune, Maharashtra",
+      "interests": ["AI", "Music"],
+      "email": "aditya@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Rohit Shah",
+      "photo": "/assets/rohit.jpg",
+      "description": "Marketing Manager from Mumbai",
+      "address": "Bandra, Mumbai, Maharashtra",
+      "interests": ["Finance", "Travel"],
+      "email": "rohit@example.com"
+    }
+  ]
+  
